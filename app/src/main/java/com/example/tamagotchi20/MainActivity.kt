@@ -1,5 +1,6 @@
 package com.example.tamagotchi20
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -19,5 +20,13 @@ class MainActivity : AppCompatActivity() {
         //Linking variables to widgets
         ebutton = findViewById(R.id.button)
         etextview = findViewById(R.id.textView)
+
+        ebutton.setOnClickListener {
+
+        val intent1= Intent(this,Sec_Activity::class.java)
+
+        startActivity(intent1)
+
+        }
     }
 }
