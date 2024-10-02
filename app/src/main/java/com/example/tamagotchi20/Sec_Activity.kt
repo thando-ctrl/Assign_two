@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 
 class Sec_Activity : AppCompatActivity() {
 
@@ -11,7 +12,13 @@ class Sec_Activity : AppCompatActivity() {
     lateinit var buttonF: Button
     lateinit var buttonC: Button
     lateinit var buttonP: Button
+    lateinit var atext: TextView
+    lateinit var btext: TextView
+    lateinit var ctext: TextView
     lateinit var image: ImageView
+    private var count1 = 0
+    private var count2 = 0
+    private var count3 = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +29,10 @@ class Sec_Activity : AppCompatActivity() {
         buttonC= findViewById(R.id.button_c)
         buttonP= findViewById(R.id.button_p)
         image= findViewById(R.id.imageView)
+        atext= findViewById(R.id.textView1)
+        btext= findViewById(R.id.textView2)
+        ctext= findViewById(R.id.textView3)
+
 
         //Upon clicking the Feed button
         buttonF.setOnClickListener {
@@ -34,6 +45,9 @@ class Sec_Activity : AppCompatActivity() {
                 image.setImageResource(R.drawable.welcome)
                 image.tag = "welcome"
             }
+            count1++
+            atext.text = "Ate $count1 times"
+
         }
         //Upon clicking the clean button
         buttonC.setOnClickListener {
@@ -46,18 +60,22 @@ class Sec_Activity : AppCompatActivity() {
                 image.setImageResource(R.drawable.welcome)
                 image.tag = "welcome"
             }
+            count2++
+            btext.text = "Bath $count2 times"
         }
         //Upon clicking the play button
         buttonP.setOnClickListener {
 
-                    if (image.tag == "welcome" || image.tag == "bath" || image.tag == "feeding")
-                    {
-                        image.setImageResource(R.drawable.playing)
-                        image.tag = "playing"
-                    } else {
-                        image.setImageResource(R.drawable.welcome)
-                        image.tag = "welcome"
-                    }
+            if (image.tag == "welcome" || image.tag == "bath" || image.tag == "feeding")
+            {
+                image.setImageResource(R.drawable.playing)
+                image.tag = "playing"
+            } else {
+                image.setImageResource(R.drawable.welcome)
+                image.tag = "welcome"
+            }
+            count3++
+            ctext.text = "played $count3 times"
             }
 
 
