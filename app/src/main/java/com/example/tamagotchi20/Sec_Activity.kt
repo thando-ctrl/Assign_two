@@ -16,9 +16,7 @@ class Sec_Activity : AppCompatActivity() {
     lateinit var btext: TextView
     lateinit var ctext: TextView
     lateinit var image: ImageView
-    private var count1 = 100
-    private var count2 = 0
-    private var count3 = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,6 +31,10 @@ class Sec_Activity : AppCompatActivity() {
         btext= findViewById(R.id.textView2)
         ctext= findViewById(R.id.textView3)
 
+        //Declaring variable to track clicks
+        var count1 = 100
+        var count2 = 0
+        var count3 = 0
 
         //Upon clicking the Feed button
         buttonF.setOnClickListener {
@@ -45,7 +47,7 @@ class Sec_Activity : AppCompatActivity() {
                 image.setImageResource(R.drawable.welcome)
                 image.tag = "welcome"
             }
-            count1--
+            count1-- //Decrementing count
             atext.text = "$count1 %"
 
         }
@@ -60,7 +62,7 @@ class Sec_Activity : AppCompatActivity() {
                 image.setImageResource(R.drawable.welcome)
                 image.tag = "welcome"
             }
-            count2++
+            count2++ //Incrementing count
             btext.text = "$count2 %"
         }
         //Upon clicking the play button
@@ -74,7 +76,7 @@ class Sec_Activity : AppCompatActivity() {
                 image.setImageResource(R.drawable.welcome)
                 image.tag = "welcome"
             }
-            count3++
+            count3++ //Incrementing count
             ctext.text = "$count3 %"
             }
 
