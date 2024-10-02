@@ -16,7 +16,7 @@ class Sec_Activity : AppCompatActivity() {
     lateinit var btext: TextView
     lateinit var ctext: TextView
     lateinit var image: ImageView
-    private var count1 = 10
+    private var count1 = 100
     private var count2 = 0
     private var count3 = 0
 
@@ -46,7 +46,7 @@ class Sec_Activity : AppCompatActivity() {
                 image.tag = "welcome"
             }
             count1--
-            atext.text = "$count1"
+            atext.text = "$count1 %"
 
         }
         //Upon clicking the clean button
@@ -61,7 +61,7 @@ class Sec_Activity : AppCompatActivity() {
                 image.tag = "welcome"
             }
             count2++
-            btext.text = "$count2"
+            btext.text = "$count2 %"
         }
         //Upon clicking the play button
         buttonP.setOnClickListener {
@@ -75,7 +75,7 @@ class Sec_Activity : AppCompatActivity() {
                 image.tag = "welcome"
             }
             count3++
-            ctext.text = "$count3"
+            ctext.text = "$count3 %"
             }
 
 
