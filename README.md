@@ -43,7 +43,7 @@ To enhance user engagement and provide a sense of progression, the app includes 
 Interaction Tracking: The status check counts how many times each button (feed, clean, play) has been clicked, providing users with feedback on their caregiving efforts. For instance, users can see if they’ve been diligent in feeding their pet or if they need to increase playtime to keep their cat happy.
 
 Video Demonstration
-
+https://youtu.be/J8mIBZmen78
 
 
 Conclusion
