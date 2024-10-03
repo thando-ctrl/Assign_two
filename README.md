@@ -15,7 +15,8 @@ Interaction Page
 Once on the interaction page, users encounter three primary buttons that represent the pet’s emotions and needs:
 
 
-![Screenshot (18)](https://github.com/user-attachments/assets/71bb6181-09a0-454e-b768-e7b6db816db1)
+![Screenshot (22)](https://github.com/user-attachments/assets/69664e26-ffc4-4828-9f9c-464136cd5f59)
+
 
 
 1. Feed: This button allows users to feed their cat. When clicked, a fun image shows as the cat enjoys its meal. The button also tracks how many times the user has fed the pet, fostering a sense of achievement and responsibility. Every time the cat eats, the hunger percentage decreases
