@@ -85,7 +85,7 @@
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="274dp"
         android:fontFamily="sans-serif-black"
-        android:text="100" />
+        android:text="100%" />
 
     <TextView
         android:id="@+id/textView2"
@@ -96,7 +96,7 @@
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="213dp"
         android:fontFamily="sans-serif-black"
-        android:text="0" />
+        android:text="0%" />
 
     <TextView
         android:id="@+id/textView3"
@@ -107,7 +107,7 @@
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="155dp"
         android:fontFamily="sans-serif-black"
-        android:text="0" />
+        android:text="0%" />
 
     <TextView
         android:id="@+id/textView_1"
